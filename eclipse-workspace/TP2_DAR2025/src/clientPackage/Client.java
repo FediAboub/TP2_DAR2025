@@ -12,7 +12,7 @@ public class Client {
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
             Scanner sc = new Scanner(System.in);
-            System.out.print("Entrez une opération (ex : 34 * 55) : ");
+            System.out.print("Entrez une opération (ex : 34*55) : ");
             String operation = sc.nextLine();
             if (!operation.matches("\\d+\\s*[+\\-*/]\\s*\\d+")) {
                 System.out.println("Format incorrect. Exemple valide : 34 * 55");
